@@ -709,7 +709,7 @@ let parser = (function(){
     
             
             if(!this.isMatch(['=']) || this.end()){
-                throw(new SyntaxError("Ожидался символ \"=\" в позиции " + pos(), pos()));
+                throw(new SyntaxError("Ожидался символ \"+\" или \"=\" в позиции " + pos(), pos()));
             } 
             this.match('=');
     
