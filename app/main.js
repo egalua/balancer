@@ -1529,7 +1529,7 @@ let parser = (function(){
             }
     
             if(this.getColsCnt()-1 == cnt){ // в ответе единичная матрица
-                throw(new BalanserError('Все коэффициенты равны нулю'));
+                throw(new BalanserError('Ошибка при попытке расстановки коэффициентов. Проверьте правильность исходных данных'));
             }
     
             for(let j = 0; j < cnt; j++){
@@ -1541,7 +1541,7 @@ let parser = (function(){
            let toInt = this._toInteger(sol);
            
             if(toInt.some((k) =>{return (k <= 0);} )){
-                throw(new BalanserError('Один или более коэффициентов меньше или равен нулю'));
+                throw(new BalanserError('Ошибка при попытке расстановки коэффициентов. Проверьте правильность исходных данных'));
             }
 
             return toInt;
