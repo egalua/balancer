@@ -9,6 +9,7 @@
     padding: 5px;
     min-width: 460px;
     max-width: 900px;
+    margin: auto;
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
 }
