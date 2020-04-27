@@ -12,8 +12,9 @@ let parser = (function(){
             return this.__pos;
         }
         set _pos(value){ 
-            if(value >= this.source.length) this.__pos = -1;
-            else if(value < 0 && value != -1) this.__pos = 0; 
+            if(value == 0 && this.source.length == 0) this.__pos = 0;
+            else if(value >= this.source.length) this.__pos = -1; // выход за границы диапазона справа
+            else if(value < 0 && value != -1) this.__pos = 0; // выход за границы диапазона слева
             else this.__pos = value;
             
         }
