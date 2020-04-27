@@ -8,16 +8,6 @@ let parser = (function(){
             this.source = source; // исходная строка
             this._pos = 0; // указатель на первый символ неразобранной части исходной строки
         }
-        get _pos(){ 
-            return this.__pos;
-        }
-        set _pos(value){ 
-            if(value == 0 && this.source.length == 0) this.__pos = 0;
-            else if(value >= this.source.length) this.__pos = -1; // выход за границы диапазона справа
-            else if(value < 0 && value != -1) this.__pos = 0; // выход за границы диапазона слева
-            else this.__pos = value;
-            
-        }
         /**
          * Первый символ неразобранной части исходной строки
          */
