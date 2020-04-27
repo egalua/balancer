@@ -18,7 +18,7 @@ let parser = (function(){
          * Указатель достижения конца исходной строки
          */
         end(){ 
-            if(this._pos < 0){
+            if(this._pos >= this.source.length ){
                 return true;
             }
             return false;
