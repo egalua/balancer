@@ -6,12 +6,14 @@
 }
 .balancerBox{
     border: 1px solid grey;
+    border-radius: 5px;
     padding: 5px;
     min-width: 460px;
     max-width: 900px;
     margin: auto;
     font-family: 'Courier New', Courier, monospace;
     box-sizing: border-box;
+    background: #cff;
 }
 .balancerBox__input-box{
     width: 100%;
@@ -25,6 +27,7 @@
     flex-shrink: 0;
     outline: none;
     border: 1px solid grey;
+    border-radius: 5px;
     padding: 3px 5px;
     font-size: 18px;
 }
@@ -34,10 +37,12 @@
     flex-grow: 0;
     flex-shrink: 0;
     border: 1px solid grey;
+    border-radius: 5px;
     margin-left: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #fff;
 }
 .balancerBox__button:hover{
     cursor: pointer;
@@ -51,4 +56,18 @@
 }
 .balancerBox__result-text{
     padding-left: 0.5em;
+    font-weight: 900;
+}
+.description{
+    min-width: 460px;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    /* background: #cfe; */
+    min-height: calc(100vh - 150px);
+    font-size: 18px;
+}
+.description__title{
+    margin: auto;
+    text-align: center;
 }
