@@ -13,3 +13,5 @@ C6H5CH2CH3 + KMnO4 + H2SO4 = C6H5COOH + CO2 + K2SO4 + MnSO4 + H2O
 можно использовать следующую запись 
 
 PhCH2CH3 + KMnO4 + H2SO4 = PhCOOH + CO2 + K2SO4 + MnSO4 + H2O
+
+Ссылка на страницу:  https://egalua.github.io/balancer/
